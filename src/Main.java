@@ -11,7 +11,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("/main_view.fxml"));
         primaryStage.setTitle("Calculator");
-        Scene scene = new Scene(root, 360.0, 270.0, Color.TRANSPARENT);
+        Scene scene = new Scene(root, 527.0, 270.0, Color.TRANSPARENT);
         scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);

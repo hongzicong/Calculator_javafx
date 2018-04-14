@@ -4,3 +4,7 @@
     -fx-background-radius: 10px;
     -fx-border-radius: 7px;
 }
+
+#Pane1, #Pane2{
+    -fx-background-color: #f6f6f6;
+}

@@ -54,24 +54,28 @@ public class MainController {
 
     @FXML
     public void Button_get_onClick(ActionEvent event){
-        double a = Double.parseDouble(TextField_A.getText());
-        double b = Double.parseDouble(TextField_B.getText());
-        double result = 0;
-        switch (Label_operator.getText()){
-            case "+":
-                result = a + b;
-                break;
-            case "-":
-                result = a - b;
-                break;
-            case "×":
-                result = a * b;
-                break;
-            case "÷":
-                result = a / b;
-                break;
+        try{
+            double a = Double.parseDouble(TextField_A.getText());
+            double b = Double.parseDouble(TextField_B.getText());
+            double result = 0;
+            switch (Label_operator.getText()){
+                case "+":
+                    result = a + b;
+                    break;
+                case "-":
+                    result = a - b;
+                    break;
+                case "×":
+                    result = a * b;
+                    break;
+                case "÷":
+                    result = a / b;
+                    break;
+            }
+            Label_result.setText(""+result);
+        }catch (NumberFormatException numE){
+            Label_result.setText("Wrong Input");
         }
-        Label_result.setText(""+result);
     }
 
     @FXML
