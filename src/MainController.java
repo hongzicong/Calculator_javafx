@@ -1,35 +1,16 @@
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class MainController {
 
     @FXML
-    private Button Button_plus;
+    private Label label_result;
 
     @FXML
-    private Button Button_minus;
-
-    @FXML
-    private Button Button_times;
-
-    @FXML
-    private Button Button_divide;
-
-    @FXML
-    private Button Button_get;
-
-    @FXML
-    private Button Button_clear;
-
-    @FXML
-    private Label Label_result;
-
-    @FXML
-    private Label Label_operator;
+    private Label label_operator;
 
     @FXML
     private TextField TextField_A;
@@ -38,27 +19,27 @@ public class MainController {
     private TextField TextField_B;
 
     @FXML
-    public void Button_plus_onClick(ActionEvent event){
-        Label_operator.setText("+");
+    public void button_plus_onClick(ActionEvent event){
+        label_operator.setText("+");
     }
 
     @FXML
-    public void Button_minus_onClick(ActionEvent event){
-        Label_operator.setText("-");
+    public void button_minus_onClick(ActionEvent event){
+        label_operator.setText("-");
     }
 
     @FXML
-    public void Button_times_onClick(ActionEvent event){
-        Label_operator.setText("×");
+    public void button_times_onClick(ActionEvent event){
+        label_operator.setText("×");
     }
 
     @FXML
-    public void Button_get_onClick(ActionEvent event){
+    public void button_get_onClick(ActionEvent event){
         try{
             double a = Double.parseDouble(TextField_A.getText());
             double b = Double.parseDouble(TextField_B.getText());
             double result = 0;
-            switch (Label_operator.getText()){
+            switch (label_operator.getText()){
                 case "+":
                     result = a + b;
                     break;
@@ -72,22 +53,22 @@ public class MainController {
                     result = a / b;
                     break;
             }
-            Label_result.setText(""+result);
+            label_result.setText(""+result);
         }catch (NumberFormatException numE){
-            Label_result.setText("Wrong Input");
+            label_result.setText("Wrong Input");
         }
     }
 
     @FXML
-    public void Button_divide_onClick(ActionEvent event){
-        Label_operator.setText("÷");
+    public void button_divide_onClick(ActionEvent event){
+        label_operator.setText("÷");
     }
 
     @FXML
-    public void Button_clear_onClick(ActionEvent event){
+    public void button_clear_onClick(ActionEvent event){
         TextField_A.setText("");
         TextField_B.setText("");
-        Label_result.setText("");
+        label_result.setText("");
     }
 
 

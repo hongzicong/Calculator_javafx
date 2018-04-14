@@ -7,11 +7,14 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
+    final static double WINDOW_WIDTH = 527.0;
+    final static double WINDOW_HEIGHT = 270.0;
+
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("/main_view.fxml"));
         primaryStage.setTitle("Calculator");
-        Scene scene = new Scene(root, 527.0, 270.0, Color.TRANSPARENT);
+        Scene scene = new Scene(root, WINDOW_WIDTH, WINDOW_HEIGHT, Color.TRANSPARENT);
         scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);

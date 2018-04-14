@@ -23,32 +23,32 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="Button_plus" mnemonicParsing="false" onAction="#Button_plus_onClick" prefHeight="102.0" prefWidth="126.0" text="+" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Button fx:id="Button_plus" mnemonicParsing="false" onAction="#button_plus_onClick" prefHeight="102.0" prefWidth="126.0" text="+" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
                   <Font size="25.0" />
                </font>
             </Button>
-            <Button fx:id="Button_minus" mnemonicParsing="false" onAction="#Button_minus_onClick" prefHeight="92.0" prefWidth="120.0" text="-" textFill="WHITE" GridPane.rowIndex="1">
+            <Button fx:id="Button_minus" mnemonicParsing="false" onAction="#button_minus_onClick" prefHeight="92.0" prefWidth="120.0" text="-" textFill="WHITE" GridPane.rowIndex="1">
                <font>
                   <Font size="25.0" />
                </font>
             </Button>
-            <Button fx:id="Button_times" mnemonicParsing="false" onAction="#Button_times_onClick" prefHeight="87.0" prefWidth="128.0" text="×" textFill="WHITE" GridPane.columnIndex="1">
+            <Button fx:id="Button_times" mnemonicParsing="false" onAction="#button_times_onClick" prefHeight="87.0" prefWidth="128.0" text="×" textFill="WHITE" GridPane.columnIndex="1">
                <font>
                   <Font size="25.0" />
                </font>
             </Button>
-            <Button fx:id="Button_get" mnemonicParsing="false" onAction="#Button_get_onClick" prefHeight="85.0" prefWidth="137.0" text="GET!!!" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Button fx:id="Button_get" mnemonicParsing="false" onAction="#button_get_onClick" prefHeight="85.0" prefWidth="137.0" text="GET!!!" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button fx:id="Button_divide" mnemonicParsing="false" onAction="#Button_divide_onClick" prefHeight="81.0" prefWidth="140.0" text="÷" textFill="WHITE">
+            <Button fx:id="Button_divide" mnemonicParsing="false" onAction="#button_divide_onClick" prefHeight="81.0" prefWidth="140.0" text="÷" textFill="WHITE">
                <font>
                   <Font size="25.0" />
                </font>
             </Button>
-            <Button fx:id="Button_clear" mnemonicParsing="false" onAction="#Button_clear_onClick" prefHeight="87.0" prefWidth="131.0" text="C" textFill="WHITE" GridPane.rowIndex="2">
+            <Button fx:id="Button_clear" mnemonicParsing="false" onAction="#button_clear_onClick" prefHeight="87.0" prefWidth="131.0" text="C" textFill="WHITE" GridPane.rowIndex="2">
                <font>
                   <Font size="15.0" />
                </font>
